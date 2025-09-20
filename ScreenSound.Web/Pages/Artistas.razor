@@ -1,7 +1,8 @@
 ﻿@page "/artistas"
 
-<h1>@Message</h1>
+@inject ArtistaAPI artistaAPI
+<h3>Artistas</h3>
 
 @code {
-    public string? Message { get; set; } = "testing";
+    private ICollection<ArtistaResponse> artistas;
 }
