@@ -11,7 +11,7 @@ public class ArtistaAPI
         _httpClient = factory.CreateClient("API");
     }
 
-    public async Task<ICollection<ArtistaResponse>?> GetArtistaAsync()
+    public async Task<ICollection<ArtistaResponse>?> GetArtistasAsync()
     {
         return await
         _httpClient.GetFromJsonAsync<ICollection<ArtistaResponse>>("artistas");
