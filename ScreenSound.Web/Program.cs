@@ -14,5 +14,3 @@ builder.Services.AddHttpClient("API", client =>
     client.BaseAddress = new Uri(builder.Configuration["https://localhost:7280/"]!);
     client.DefaultRequestHeaders.Add("Accept", "application/json");
 });
-
-await builder.Build().RunAsync();
