@@ -36,4 +36,5 @@ public class ArtistaAPI
     {        
        await _httpClient.PutAsJsonAsync($"artistas", artista);
     }
+
 }
